@@ -2,7 +2,6 @@ class QueueSystem
     
     def initialize(queue_quantity)
         @queue_quantity = queue_quantity
-        # if queue size > 1 multiple_queue_system else unique
 
         if(@queue_quantity > 0)
             self.create_queue_system();
@@ -26,4 +25,3 @@ class QueueSystem
     end
 
 end
-
