@@ -8,20 +8,38 @@ class QueueSystem
 
         else
             puts "Error: You cannot create a queue system with 0 queues"
-
         end
     end
+
 
     def create_queue_system
         @queue_system = Array.new(@queue_quantity) {Array.new()}
     end
 
-    def add_user_to_queue(index_of_queue, user)
+    def get_emptiest_queue
+        index_of_emptiest_queue = 0;
+        minimum_length = @queue_system[0].length
+        
+        @queue_system.each_with_index do |queue, i|
+            if(minimum_length > queue.length)
+                index_of_emptiest_queue = i
+                minimum_length = queue.length
+            end
+        end
+
+        return index_of_emptiest_queue
+    end
+
+    def add_client_to_queue(index_of_queue, user)
         @queue_system[index_of_queue].push(user);
     end
 
-    def remove_user_of_queue(index_of_queue)
+    def remove_client_of_queue(index_of_queue)
         @queue_system[index_of_queue].shift();
     end
 
+    def print_()
+        print(@queue_system)
+    end
 end
+
