@@ -23,5 +23,4 @@ class QueueSystem
     def remove_user_of_queue(index_of_queue)
         @queue_system[index_of_queue].shift();
     end
-
 end
