@@ -6,3 +6,4 @@ class Client
         @time_in_cash_register = time_in_cash_register;
     end
 end
+
