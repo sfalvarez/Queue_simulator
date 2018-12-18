@@ -4,7 +4,6 @@ class Client
         @name = name;
         @time_of_arrival = time_of_arrival;
         @time_in_cash_register = time_in_cash_register;
-        
     end
 end
 

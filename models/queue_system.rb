@@ -42,4 +42,3 @@ class QueueSystem
         print(@queue_system)
     end
 end
-
