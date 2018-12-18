@@ -33,16 +33,3 @@ class SupermarketSystemController
 
 end
 
-
-sp = SupermarketSystemController.new(3,3)
-
-sp.add_client_to_emptiest_queue(Client.new('a',20,10))
-
-sp.add_client_to_emptiest_queue(Client.new('a',20,10))
-
-sp.print_()
-
-sp.assign_client_to_empty_cash_register(0);
-
-sp.print_()
-
